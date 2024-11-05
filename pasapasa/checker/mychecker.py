@@ -98,7 +98,7 @@ class MyChecker(checkerlib.BaseChecker):
             return False
         
         output = stdout.read().decode().strip()
-        return hashlib.md5(output.encode()).hexdigest() == 'a4ed71eb4f7c89ff868088a62fe33036'
+        return hashlib.md5(output.encode()).hexdigest() == 'ba55c650e08e328f1225c76f810f1328b'
     
     @ssh_connect()
     def _check_ssh_integrity(self, path):
